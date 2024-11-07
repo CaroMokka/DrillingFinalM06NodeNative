@@ -70,7 +70,7 @@ export const setAnimes = (req, res) => {
       await writeFile(
         filePath,
         JSON.stringify(updateAnimesData, null, 2),
-        "utf-8"
+        "utf-8" 
       );
       res.writeHead(201, { "Content-Type": "application/json" });
       return res.end(
